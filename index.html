@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body bgcolor="#f5cba7">
+    <header>
+        <h1><b><u>Advanced HTML5 Elements Showcase</u></b></h1>
+    </header>
+
+    <section>
+        <h2> <i>Objectives</i></h2>
+        <ol type="i">
+            <li>Implement HTML5 images</li>
+            <li>Create complex lists and tables</li>
+            <li>Develop interactive forms</li>
+            <li>Apply multimedia elements</li>
+            <li>Use form validation techniques</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2><i>Sample Image</i></h2>
+        <img src="https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg" 
+             alt="Business Team Collaboration" 
+             width="600" 
+             height="400">
+    </section>
+
+    <!-- Contacts Table -->
+    <section>
+        <h2><i>Contact Directory</i></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jean Natwoli</td>
+                    <td>00100, Nairobi</td>
+                    <td>+254765984947</td>
+                    <td>me@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Cliff Natwoli</td>
+                    <td>00800, Here</td>
+                    <td>+4555987-6543</td>
+                    <td>cj@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Duncan Natwoli</td>
+                    <td>00980, Hapa</td>
+                    <td>+34555 246-8135</td>
+                    <td>Duncan@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Clare Natwoli</td>
+                    <td>9898,Huko</td>
+                    <td>+1 (555) 369-2580</td>
+                    <td>Claire@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Robert Natwoli</td>
+                    <td>982357, Kule</td>
+                    <td>+1555 147-2589</td>
+                    <td>Rob@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2><i>User Registration</i></h2>
+        <form id="registrationForm">
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                
+                <label for="fullName">Full Name *</label>
+                <input type="text" 
+                       id="fullName" 
+                       name="fullName" 
+                       placeholder="Enter your full name" 
+                       required 
+                       minlength="2" 
+                       maxlength="50">
+                
+                <label for="email">Email *</label>
+                <input type="email" 
+                       id="email" 
+                       name="email" 
+                       placeholder="Enter your email address" 
+                       required 
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                
+                <label for="password">Password *</label>
+                <input type="password" 
+                       id="password" 
+                       name="password" 
+                       placeholder="Create a strong password" 
+                       required 
+                       minlength="8">
+                
+                <label for="birthDate">Date of Birth *</label>
+                <input type="date" 
+                       id="birthDate" 
+                       name="birthDate" 
+                       required>
+            </fieldset>
+
+            <!-- Additional Information -->
+            <fieldset>
+                <legend>Additional Information</legend>
+                
+                <label for="country">Country *</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label>Preferred Communication *</label>
+                <div>
+                    <input type="radio" id="emailComm" name="communication" value="email" required>
+                    <label for="emailComm">Email</label>
+                    
+                    <input type="radio" id="phoneComm" name="communication" value="phone">
+                    <label for="phoneComm">Phone</label>
+                    
+                    <input type="radio" id="mailComm" name="communication" value="mail">
+                    <label for="mailComm">Mail</label>
+                </div>
+                
+                <label>Interests</label>
+                <div>
+                    <input type="checkbox" id="tech" name="interests" value="technology">
+                    <label for="tech">Technology</label>
+                    
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">Sports</label>
+                    
+                    <input type="checkbox" id="travel" name="interests" value="travel">
+                    <label for="travel">Travel</label>
+                    
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Music</label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Register</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </section>
+
+    <!-- Multimedia Elements (Optional) -->
+    <section>
+        <h2><i>Multimedia Preview</i></h2>
+        <audio controls>
+            <source src="https://example.com/sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <video controls width="640" height="360">
+            <source src="https://example.com/sample-video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+</body>
+</html>
